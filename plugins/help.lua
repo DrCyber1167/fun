@@ -39,9 +39,9 @@ local function make_keyboard(mod, mod_current_position)
     end
     local bottom_bar
     if mod then
-		bottom_bar = {{text = '🔰 User commands', callback_data = 'user'}}
+		bottom_bar = {{text = '🔰 دستورات کاربران', callback_data = 'user'}}
 	else
-	    bottom_bar = {{text = '🔰 Admin commands', callback_data = 'mod'}}
+	    bottom_bar = {{text = '🔰 دستورات مدیران', callback_data = 'mod'}}
 	end
 	table.insert(bottom_bar, {text = 'Info', callback_data = 'fromhelp:info'}) --insert the "Info" button
 	table.insert(keyboard.inline_keyboard, bottom_bar)
@@ -52,11 +52,11 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '👥 Add me to a group', url = 'https://telegram.me/'..bot.username..'?startgroup=new'},
-    		{text = '📢 Bot channel', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
+    		{text = '👥 ربات را به گروه خود ببرید', url = 'https://telegram.me/'..bot.username..'?startgroup=new'},
+    		{text = '📢 چنل ما', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
 	    },
 	    {
-	        {text = '📕 All the commands', callback_data = 'user'}
+	        {text = '📕 تمامی دستورات', callback_data = 'user'}
         }
     }
     return keyboard
@@ -66,7 +66,7 @@ local function do_keyboard_startme()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Start me', url = 'https://telegram.me/'..bot.username}
+    		{text = 'ربات را استارت کن', url = 'https://telegram.me/'..bot.username}
 	    }
     }
     return keyboard
