@@ -1,12 +1,12 @@
 return {
-	bot_api_key = '198733539:AAGV9pV-ry2He6PozSlAWRPXW3tO5DoNSe4',
-	version = '4.0',
+	bot_api_key = '', -- توکن ربات خود رو قرار دهید --
+	version = '1.0',
 	cmd = '^[/!#]',
 	db = 2, --default redis db: 0
 	admin = {
-		owner = 23646077,
+		owner = 232006008,
 		admins = {
-			[141956218] = true
+			[232006008] = true
 		}
 	},
 	log_chat = -1001057801239,
@@ -19,11 +19,11 @@ return {
 		notify_bug = true,
 		log_api_errors = false
 	},
-	channel = '@groupbutler_ch', --channel username with the '@'
+	channel = '@MrHameKareCH', --channel username with the '@'
 	help_groups = {
-		['Internatonal (English)'] = 'https://telegram.me/joinchat/CHYUej9jFxFN12MQqrLnUg', --group link, not username!
-		['Italian'] = false, --'https://telegram.me/joinchat/CHYUej7oPES-Gdw5hmgAXg',
-		['Persian'] = 'https://telegram.me/joinchat/CHYUej8VRwlY9dzoKMERog',
+		['Internatonal (English)'] = false, -- لینک گروه پشتیبانی انگلیسی خود --
+		['Italian'] = false, 
+		['Persian'] = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw',
 		['Spanish'] = false
 	},
 	languages = 'languages.lua',
@@ -54,18 +54,7 @@ return {
 		'eightball.lua'
 	},
 	available_languages = {
-		['en'] = 'English 🇬🇧',
-		['it'] = 'Italiano 🇮🇹',
-		['es'] = 'Español 🇪🇸',
-		['br'] = 'Português 🇧🇷',
-		['ru'] = 'русский 🇷🇺',
-		['de'] = 'Deutschland 🇩🇪',
-		['sv'] = 'Svensk 🇸🇪',
-		['ar'] = 'العربية 🇸🇩',
-		['fr'] = 'Français 🇫🇷',
-		['tc'] = '中文 🇨🇳',
 		['fa'] = 'فارسی 🇮🇷'
-		--more to come
 	},
 	media_list = {
 		'image',
@@ -82,7 +71,7 @@ return {
 		['settings'] = {
 			['Welcome'] = 'on',
 			['Extra'] = 'on',
-			['Flood'] = 'off',
+			['Flood'] = 'on',
 			['Silent'] = 'off',
 			['Rules'] = 'off'
 		},
@@ -120,7 +109,7 @@ return {
 			['voice'] = 'ok',
 			['contact'] = 'ok',
 			['file'] = 'ok',
-			['link'] = 'ok',
+			['link'] = 'kick',
 			['TGlink'] = 'ok'
 		},
 	},
